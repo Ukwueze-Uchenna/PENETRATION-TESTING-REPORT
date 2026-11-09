@@ -85,7 +85,20 @@ Each tool used and its purpose can be found in the table below.
 
 ---
 
-# 🛡️ 4. Activities Performed
+---
+
+
+<div align="center">
+🛡️Activities Performed 
+</p>
+
+</div> 
+<p align="left">
+
+---
+
+# 4. Footprinting & Reconnaissance Attacks With Multiple Kali Tools 
+  
 ## 4.1. Background
 Reconnaissance (also called as footprinting) is the first step in any real attack or security test. Before 
 touching a target, an attacker quietly collects as much public information about it as possible. This 
@@ -184,6 +197,15 @@ attacker understand the email and hosting setup.**
 
 ---
 
+## 🔎 5. Network Scanning with Zenmap
+## 5.1. Background
+Zenmap is the official GUI version of Nmap which can be used on Windows PC. It is a security scanner 
+software tool which is used by Cybersecurity professionals & Hackers. It is a multi-platform (Linux, Windows, 
+Mac OS X, BSD, etc.) free and open source application which aims to make Nmap easy for beginners to use 
+while providing advanced features for experienced Nmap users. Frequently used scans can be saved as 
+profiles to make them easy to run repeatedly.
+
+## 5.2 
 
 
 
