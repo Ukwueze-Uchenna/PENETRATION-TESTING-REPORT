@@ -76,9 +76,9 @@ Each tool used and its purpose can be found in the table below.
 | Windows OS           | Host Operating systems utilized for networking activities including network mapping via Zenmap |
 | WHOIS                | Queries or Finds domain registration details such as registration ownership, critical dates, and authoritative name servers)                                                               |
 | whatweb              | Fingerprint web technologies (server, CMS, plugins, IP).         |
-| nslookup             | Resolve the domain name to its IP address using DNS.             |
-| curl -I              | Read the HTTP response headers of the website.                   |
-| wafw00f              | Detect whether a Web Application Firewall protects the site.     |
+| nslookup             | Performs DNS lookup to resolve target domain names to their respective IP address              |
+| curl -I              | Fetches, analyses, and reads the HTTP response headers of the website.                         |
+| wafw00f              | Probes the web application to detect the presence and type of Web Application Firewall (WAF) present                                                                                                                 |
 | dnsrecon             | Enumerate all DNS records (NS, MX, SPF, TXT, SRV).               |
 | Zenmap (Nmap GUI)    | Scan the local subnet to find live hosts, IPs and MAC addresses. |
 | Windows CMD          | Local IP and MAC address identification                          |
