@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/NetworkWalks-404040?style=flat-square&labelColor=C00000" />  
   <img src="https://img.shields.io/badge/GitHub-404040?style=flat-square&labelColor=0070C0&logo=github&logoColor=white" />
   <div align="center">
-<img src="https://img.shields.io/badge/Author: Ukwueze%20Uchenna%20Collins-C00000?style=flat-square" />
+<img src="https://img.shields.io/badge/👨🏽‍💻Pentester: Ukwueze%20Uchenna%20Collins-C00000?style=flat-square" />
 </p>
 
 ---
@@ -114,36 +114,82 @@ DNSRecon
 
 ### 4.2.1. WHOIS
 WHOIS was used to obtain publicly available domain registration information and identify the domain’s name servers. The results provided information about the domain registration and hosting infrastructure.
-
-<img width="1920" height="1080" alt="wk2-pm1-result-whois networkwalks2" src="https://github.com/user-attachments/assets/8e63f437-e7f2-42c8-ae97-4df4e4c4c224" />
+> **Command used: ```whois networkwalks.com```**
 
 <img width="1920" height="1080" alt="wk2-pm1-result-whois networkwalks1" src="https://github.com/user-attachments/assets/4f0194fa-0b11-4c36-8367-3422c18d6b92" />
 
-> ⚠️ **Note: Here the name servers point to HostGator, so an attacker instantly learns the hosting provider. Registration dates, and abuse contacts help with social engineering and planning.**
+<img width="1920" height="1080" alt="wk2-pm1-result-whois networkwalks2" src="https://github.com/user-attachments/assets/8e63f437-e7f2-42c8-ae97-4df4e4c4c224" />
+
+> ⚠️ **Security relevance: Here the name servers point to HostGator, so an attacker instantly learns the hosting provider. Registration dates, and abuse contacts help with social engineering and planning.**
 
 ---
 
 ### 4.2.2. Whatweb
 WhatWeb was used to identify and fingerprint technologies used by the website.
+> **Command used: ```whatweb networkwalks.com```**
 
 <img width="1920" height="1080" alt="wk2-pm1-result-whatweb networkwalks" src="https://github.com/user-attachments/assets/ee685813-98bc-41f5-b138-bfd3c9c43728" />
 
-> ⚠️ **Note: whatweb exposes the exact software and versions (here Wordpress 7.1.4 and WP Download 
+> ⚠️ **Security relevance: whatweb exposes the exact software and versions (here Wordpress 7.1.4 and WP Download 
 Manager 3.3.76). An attacker looks these versions up in vulnerability databases to find known 
 exploits. It also leaks the server IP and an email address.**
 
 ---
 
 ### 4.2.3 Nslookup
-Nslookup was used to resolve the targets domain name to its IP address. The provided result identified 192.232.216.135.
+Nslookup was used to resolve the targets domain name to its IP address. The provided result identified ```192.232.216.135.```
+> **Command used: ```nslookup networkwalks.com; OR, $ nslookup -vc networkwalks.com 8.8.8.8```**```**
 
 <img width="1920" height="1080" alt="wk2-pm1-result-nslookup networkwalks" src="https://github.com/user-attachments/assets/92b4a0c1-7f45-47ed-aeb6-7bb768ace91b" />
 
-> ⚠️ **Note: nslookup turns a domain name into its real IP address (192.232.216.135). Knowing the IP lets an 
+> ⚠️ **Security relevance: nslookup turns a domain name into its real IP address (192.232.216.135). Knowing the IP lets an 
 attacker scan the server directly, look up other sites on the same IP, and map the target's 
 infrastructure.**
 
 ---
+
+### 4.2.4 curl
+Curl was used with the -I option to inspect the HTTP response headers. This provided additional information about the web application and exposed the WordPress REST API endpoint /wp-json/.
+> **Command used: ```curl -I https://networkwalks.com```**
+
+<img width="1920" height="1006" alt="wk2-pm1-result-curl -I networkwalks" src="https://github.com/user-attachments/assets/da4a2f3a-0c1b-4d23-99ec-abd12017a057" />
+
+> ⚠️ **Security relevance: HTTP headers leak the web server, caching stack and hidden endpoints (here the WordPress 
+REST API at /wp-json/). Attackers read headers to fingerprint the stack and find entry points 
+without even loading the full page.**
+
+---
+
+### 4.2.5 wafw00f 
+wafw00f was used to determine whether a Web Application Firewall was protecting the website. The result identified ModSecurity (SpiderLabs) Web Application Firewall.
+> **Command used: ```wafw00f networkwalks.com```**
+
+<img width="1920" height="1080" alt="wk2-pm1-results-wafw00f networkwalks" src="https://github.com/user-attachments/assets/f9d2172b-18da-448c-af9a-e968dc21cc44" />
+
+> ⚠️ **Security relevance: wafw00f tells an attacker if a firewall is watching. Here the site sits behind ModSecurity
+(SpiderLabs). Knowing a WAF is present shapes the whole attack: naive attempts will be blocked 
+or logged, so the attacker must adapt or try to bypass it.**
+
+---
+
+### 4.2.6 dnsrecon 
+dnsrecon was used to enumerate DNS records. The results provided information relating to name servers, mail servers, SPF/TXT records, service records and DNS software information.
+> **Command used: ```dnsrecon -d networkwalks.com```**
+
+<img width="1920" height="1080" alt="wk2-pm1-result-dnsrecon -d networkwalks" src="https://github.com/user-attachments/assets/63541c8b-9e58-412d-9d78-6a60e5a5966a" />
+
+> ⚠️ **Security relevance: dnsrecon maps the target's entire DNS footprint: mail servers, DNS software version (Bind 
+9.16.23), SPF policy and cPanel service records. Each record is a potential foothold and helps an 
+attacker understand the email and hosting setup.**
+
+---
+
+
+
+
+
+
+
 
 
 
