@@ -93,7 +93,8 @@ includes who owns the domain, its real IP address, the hosting provider, the web
 runs, its DNS and mail records, and whether a firewall is protecting it. All of this comes from 
 information the target has already made public, so the target never even knows it is being studied. 
 This is why recon is powerful and very hard to detect.
-> ⚠️ **In this lab, the live website networkwalks.com was footprinted**
+
+> ⚠️ **In this lab, the live website networkwalks.com was footprinted.**
 
 ## 💡4.2. Footprinting & Reconnaissance
 
@@ -107,7 +108,7 @@ Curl
 Wafw00f 
 DNSRecon
 ```
-> ⚠️ **Note: Each tool was used to collect a different type of information about the target as seen in the table above**
+> ⚠️ **Note: Each tool was used to collect a different type of information about the target as seen in table 3 above.**
 
 ---
 
@@ -118,7 +119,7 @@ WHOIS was used to obtain publicly available domain registration information and 
 
 <img width="1920" height="1080" alt="wk2-pm1-result-whois networkwalks1" src="https://github.com/user-attachments/assets/4f0194fa-0b11-4c36-8367-3422c18d6b92" />
 
-> ⚠️ **Note: Here the name servers point to HostGator, so an attacker instantly learns the hosting provider. Registration dates and abuse contacts help with social engineering and planning**
+> ⚠️ **Note: Here the name servers point to HostGator, so an attacker instantly learns the hosting provider. Registration dates, and abuse contacts help with social engineering and planning.**
 
 
 
