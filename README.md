@@ -72,9 +72,9 @@ Each tool used and its purpose can be found in the table below.
 
 | Tool | Purpose |
 |---|---|
-| Kali Linux & Windows | Operating system deployed to conduct initial reconnaissance and information gathering          |
+| Kali Linux           | Operating system deployed to conduct initial reconnaissance and information gathering          |
 | Windows OS           | Host Operating systems utilized for networking activities including network mapping via Zenmap |
-| Whois                | Queries or Finds domain registration details such as registration ownership, critical dates, and authoritative name servers)                                                               |
+| WHOIS                | Queries or Finds domain registration details such as registration ownership, critical dates, and authoritative name servers)                                                               |
 | whatweb              | Fingerprint web technologies (server, CMS, plugins, IP).         |
 | nslookup             | Resolve the domain name to its IP address using DNS.             |
 | curl -I              | Read the HTTP response headers of the website.                   |
