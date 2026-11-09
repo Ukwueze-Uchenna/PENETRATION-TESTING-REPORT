@@ -205,7 +205,79 @@ Mac OS X, BSD, etc.) free and open source application which aims to make Nmap ea
 while providing advanced features for experienced Nmap users. Frequently used scans can be saved as 
 profiles to make them easy to run repeatedly.
 
-## 5.2 
+---
+
+## 5.2. Introduction and Objectives
+For this second activity, I used **Zenmap** to perform **network discovery on my local network**. This practical required me to:
+``` text
+a). Identify my local IP address and subnet
+b). Discover live hosts
+c). Identify their IP addresses
+d). Identify their MAC addresses
+e). Generate a network topology
+```
+
+---
+
+## 5.2.1. Procedure
+- The Windows `ipconfig` command was entered in my cmd prompt to identify my `local IP address` and `LAN subnet`.
+- I then entered the **subnet** into **Zenmap** and selected **Ping Scan** to identify **active hosts**.
+
+---
+
+## 5.2.2 Example of Hosts Identified
+```text
+10.251.186.123
+10.251.186.152
+```
+- The example results also included two MAC addresses.
+
+**See images below**
+
+<img width="1918" height="1080" alt="week 2-pm 5-task 3" src="https://github.com/user-attachments/assets/9990ef7a-9e7c-41d5-8b6c-b942b7095a2d" />
+
+<img width="1917" height="1077" alt="wk 2-pm 5-task 3" src="https://github.com/user-attachments/assets/155dc514-da99-4554-916f-4e4a9a412227" />
+
+---
+
+# 📑 6. Networkwalks Zenmap Quiz Results
+
+<img width="1920" height="1080" alt="nmap result 1" src="https://github.com/user-attachments/assets/575db887-5cd4-4f6f-a244-22cfa98bfdb9" />
+
+<img width="960" height="540" alt="zenmap result 2" src="https://github.com/user-attachments/assets/9435631c-34dd-4451-819f-ea9195980ba1" />
+
+<img width="960" height="540" alt="zenmap result 3" src="https://github.com/user-attachments/assets/183b9002-4551-4951-a8c3-b3a2f22d7dae" />
+
+---
+
+# 🎯 7. Risk Analysis / Impact
+
+Based on the information collected during the footprinting and network scanning activities, I identified the following potential risks.
+
+| **\#** | **Risk / Finding**                           | **Evidence / Observation**                                  | **⚠️Potential Impact**                                                                                            | **Risk Level** |
+|--------|----------------------------------------------|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|----------------|
+| 1      | Web technology information exposed           | WhatWeb identified WordPress and WP Download Manager        | Attackers may use exposed technology/version information to identify software requiring further security review | **● Medium**   |
+| 2      | Server IP address identifiable               | Nslookup resolved the domain to `192.232.216.135`           | Provides information about the network location of the web service                                              | **● Low**      |
+| 3      | HTTP technical information exposed           | Curl returned HTTP response headers and exposed `/wp-json/` | May assist technology fingerprinting and further enumeration                                                    | **● Low**      |
+| 4      | WAF technology identifiable                  | Wafw00f identified ModSecurity (SpiderLabs)                 | Reveals information about the web application’s security architecture                                           | **● Low**      |
+| 5      | DNS infrastructure information exposed       | DNSRecon identified DNS, mail and service-related records   | DNS information can help build a broader infrastructure profile                                                 | **● Medium**   |
+| 6      | Multiple live hosts visible on local network | Zenmap identified four live hosts in the example network    | Unknown or unauthorized devices may potentially be present on a network                                         | **● Medium**   |
+
+**Risk level key:** ● Critical ● Medium ● Low
+
+The risks above are observations from the footprinting and scanning exercises, not confirmed vulnerabilities.
+
+The practical exercises primarily involved information gathering and host discovery. No exploitation or vulnerability validation was performed as part of these two modules.
+
+Therefore, the presence of information such as a software version, IP address or DNS record does not by itself mean that the system is vulnerable. Further authorized security testing would be required to confirm any actual vulnerability.
+
+
+
+
+
+
+
+
 
 
 
