@@ -85,9 +85,17 @@ Each tool used and its purpose can be found in the table below.
 
 ---
 
-# 🛡️ 4.1 Activities Performed
+# 🛡️ 4. Activities Performed
+## 4.1. Background
+Reconnaissance (also called as footprinting) is the first step in any real attack or security test. Before 
+touching a target, an attacker quietly collects as much public information about it as possible. This 
+includes who owns the domain, its real IP address, the hosting provider, the web technologies it 
+runs, its DNS and mail records, and whether a firewall is protecting it. All of this comes from 
+information the target has already made public, so the target never even knows it is being studied. 
+This is why recon is powerful and very hard to detect.
+> ⚠️ **In this lab, the live website networkwalks.com was footprinted**
 
-## 💡4.1 Footprinting & Reconnaissance
+## 💡4.2. Footprinting & Reconnaissance
 
 I performed reconnaissance against the `networkwalks.com` domain using six Kali Linux commands: 
 
@@ -103,7 +111,7 @@ DNSRecon
 
 ---
 
-### 4.1.1   WHOIS
+### 4.2.1   WHOIS
 WHOIS was used to obtain publicly available domain registration information and identify the domain’s name servers. The results provided information about the domain registration and hosting infrastructure.
 
 <img width="1920" height="1080" alt="wk2-pm1-result-whois networkwalks2" src="https://github.com/user-attachments/assets/8e63f437-e7f2-42c8-ae97-4df4e4c4c224" />
