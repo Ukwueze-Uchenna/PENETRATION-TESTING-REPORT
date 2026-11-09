@@ -112,7 +112,7 @@ DNSRecon
 
 ---
 
-### 4.2.1   WHOIS
+### 4.2.1. WHOIS
 WHOIS was used to obtain publicly available domain registration information and identify the domain’s name servers. The results provided information about the domain registration and hosting infrastructure.
 
 <img width="1920" height="1080" alt="wk2-pm1-result-whois networkwalks2" src="https://github.com/user-attachments/assets/8e63f437-e7f2-42c8-ae97-4df4e4c4c224" />
@@ -121,7 +121,31 @@ WHOIS was used to obtain publicly available domain registration information and 
 
 > ⚠️ **Note: Here the name servers point to HostGator, so an attacker instantly learns the hosting provider. Registration dates, and abuse contacts help with social engineering and planning.**
 
-### 4.2.2 
+---
+
+### 4.2.2. Whatweb
+WhatWeb was used to identify and fingerprint technologies used by the website.
+
+<img width="1920" height="1080" alt="wk2-pm1-result-whatweb networkwalks" src="https://github.com/user-attachments/assets/ee685813-98bc-41f5-b138-bfd3c9c43728" />
+
+> ⚠️ **Note: whatweb exposes the exact software and versions (here Wordpress 7.1.4 and WP Download 
+Manager 3.3.76). An attacker looks these versions up in vulnerability databases to find known 
+exploits. It also leaks the server IP and an email address.**
+
+---
+
+### 4.2.3 Nslookup
+Nslookup was used to resolve the targets domain name to its IP address. The provided result identified 192.232.216.135.
+
+<img width="1920" height="1080" alt="wk2-pm1-result-nslookup networkwalks" src="https://github.com/user-attachments/assets/92b4a0c1-7f45-47ed-aeb6-7bb768ace91b" />
+
+> ⚠️ **Note: nslookup turns a domain name into its real IP address (192.232.216.135). Knowing the IP lets an 
+attacker scan the server directly, look up other sites on the same IP, and map the target's 
+infrastructure.**
+
+---
+
+
 
 
 
