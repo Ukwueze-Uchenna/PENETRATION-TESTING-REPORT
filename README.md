@@ -45,10 +45,11 @@ W2-PM-FINAL | CYBERSECURITY |  NETWORKWALKS
 # 🎯 1. Liability Disclaimer
 
 The activities documented in this report were conducted strictly on systems and devices for which prior written authorization was obtained, or on personally owned hardware. The contents of this document are intended strictly for educational and research purposes. The instructor, author, and Networkwalks assume no liability for the misuse or misapplication of this knowledge; all subsequent actions taken by the reader are their sole responsibility. Unauthorized system access constitutes a criminal offense in most jurisdictions, regardless of whether data or systems are damaged, and can result in severe legal penalties, significant fines, career impact (employment termination), and a permanent criminal record. 
-> **Authorization must be Secured from Networkwalks**
+> ⚠️ **Note: Authorization must be Secured from Networkwalks before performing reconnaisance & footprinting**
 
 ---
 
+# ☄️ 2. Introduction
 
 
 
