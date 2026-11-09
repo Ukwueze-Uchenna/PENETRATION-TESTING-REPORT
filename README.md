@@ -101,6 +101,17 @@ DNSRecon
 ```
 > ⚠️ **Note: Each tool was used to collect a different type of information about the target as seen in the table above**
 
+---
+
+### 4.1.1   WHOIS
+WHOIS was used to obtain publicly available domain registration information and identify the domain’s name servers. The results provided information about the domain registration and hosting infrastructure.
+
+<img width="1920" height="1080" alt="wk2-pm1-result-whois networkwalks2" src="https://github.com/user-attachments/assets/8e63f437-e7f2-42c8-ae97-4df4e4c4c224" />
+
+<img width="1920" height="1080" alt="wk2-pm1-result-whois networkwalks1" src="https://github.com/user-attachments/assets/4f0194fa-0b11-4c36-8367-3422c18d6b92" />
+
+> ⚠️ **Note: Here the name servers point to HostGator, so an attacker instantly learns the hosting provider. Registration dates and abuse contacts help with social engineering and planning**
+
 
 
 
