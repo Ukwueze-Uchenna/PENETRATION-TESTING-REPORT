@@ -72,16 +72,16 @@ Each tool used and its purpose can be found in the table below.
 
 | Tool | Purpose |
 |---|---|
-| Kali Linux           | Operating system deployed to conduct initial reconnaissance and information gathering          |
-| Windows OS           | Host Operating systems utilized for networking activities including network mapping via Zenmap |
-| WHOIS                | Queries or Finds domain registration details such as registration ownership, critical dates, and authoritative name servers)                                                               |
-| whatweb              | Fingerprint web technologies (server, CMS, plugins, IP).         |
-| nslookup             | Performs DNS lookup to resolve target domain names to their respective IP address              |
-| curl -I              | Fetches, analyses, and reads the HTTP response headers of the website.                         |
-| wafw00f              | Probes the web application to detect the presence and type of Web Application Firewall (WAF) present                                                                                                                 |
-| dnsrecon             | Enumerate all DNS records (NS, MX, SPF, TXT, SRV).               |
-| Zenmap (Nmap GUI)    | Scan the local subnet to find live hosts, IPs and MAC addresses. |
-| Windows CMD          | Local IP and MAC address identification                          |
+| Kali Linux           | Operating system deployed to conduct initial reconnaissance and information gathering.          |
+| Windows OS           | Host Operating systems utilized for networking activities including network mapping via Zenmap. |
+| WHOIS                | Queries or Finds domain registration details such as registration ownership, critical dates, and authoritative name servers.                                                                                              |
+| whatweb              | Identifies and fingerprints web technologies, including servers, CMS - content management system, plugins, and IP.                                                                                                         |
+| nslookup             | Performs DNS lookup to resolve target domain names to their respective IP address               |
+| curl -I              | Fetches, analyses, and reads the HTTP response headers of the website.                          |
+| wafw00f              | Probes the web application to detect the presence and type of Web Application Firewall (WAF) present.                                                                                                                 |
+| dnsrecon             | Enumerate or discovers all DNS records (NS, MX, SPF, TXT, SRV).                                 |
+| Zenmap (Nmap GUI)    | Scan the local subnet to find live hosts, active IP addresses, and MAC addresses.               |
+| Windows CMD          | Local IP and MAC address identification via a command line interface.                           |
 
 
 
