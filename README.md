@@ -66,6 +66,21 @@ To ensure reproducibility and rigorous documentation, every technical step outli
 
 ---
 
+# ⚒️ 3. Tools Used
+
+Each tool used and its purpose can be found in the table below.
+
+| Tool | Purpose |
+|---|---|
+| Kali Linux & Windows | Operating systems used for reconnaissance activities             |
+| WHOIS                | Find domain registration details (owner, dates, name servers).   |
+| whatweb              | Fingerprint web technologies (server, CMS, plugins, IP).         |
+| nslookup             | Resolve the domain name to its IP address using DNS.             |
+| curl -I              | Read the HTTP response headers of the website.                   |
+| wafw00f              | Detect whether a Web Application Firewall protects the site.     |
+| dnsrecon             | Enumerate all DNS records (NS, MX, SPF, TXT, SRV).               |
+| Zenmap (Nmap GUI)    | Scan the local subnet to find live hosts, IPs and MAC addresses. |
+| Windows CMD          | Local IP and MAC address identification                          |
 
 
 
