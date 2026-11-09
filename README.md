@@ -51,6 +51,10 @@ The activities documented in this report were conducted strictly on systems and 
 
 # ☄️ 2. Introduction
 
+As part of my Networkwalks internship program (week 2), this report provides a comprehensive analysis of the Footprinting/Reconnaissance phases targeting the networkwalks.com domain and subsequent scanning of the local network utilizing Zenmap. By leveraging a combination of Kali Linux tools and Zenmap, this assessment simulates how a malicious actor actively maps live network hosts. The methodology mirrors an attacker's lifecycle, transitioning from passive data gathering (W2-PM1) to active host discovery (W2-PM5).
+
+All footprinting commands were executed within a Kali Linux environment, while scanning activities were performed via Zenmap on a windows host (pc). To ensure reproducibility and rigorous documentation, every technical step outlines the exact commands utilized, corresponding system output, verification screenshots, and a brief analytical note from the attackers point of view regarding the security implications of the exposed data.
+
 
 
 
