@@ -173,13 +173,13 @@ without even loading the full page.**
 
 ---
 
-### 4.2.5 wafw00f 
-wafw00f was used to determine whether a Web Application Firewall was protecting the website. The result identified ModSecurity (SpiderLabs) Web Application Firewall.
-> **Command used: ```wafw00f networkwalks.com```**
+### 4.2.5 Wafwoof 
+wafwoof was used to determine whether a Web Application Firewall was protecting the website. The result identified ModSecurity (SpiderLabs) Web Application Firewall.
+> **Command used: ```wafwoof networkwalks.com```**
 
 <img width="1920" height="1080" alt="wk2-pm1-results-wafw00f networkwalks" src="https://github.com/user-attachments/assets/f9d2172b-18da-448c-af9a-e968dc21cc44" />
 
-> ⚠️ **Security relevance: wafw00f tells an attacker if a firewall is watching. Here the site sits behind ModSecurity
+> ⚠️ **Security relevance: wafwoof tells an attacker if a firewall is watching. Here the site sits behind ModSecurity
 (SpiderLabs). Knowing a WAF is present shapes the whole attack: naive attempts will be blocked 
 or logged, so the attacker must adapt or try to bypass it.**
 
@@ -309,31 +309,25 @@ Therefore, the presence of information such as a software version, IP address or
 
 ---
 
-# 9. Security Assessment Summary
+# 🎯 9. Security Assessment Summary
 
 | **Category** | **Status**| 
 |---|---|
-| 🔎 Reconnaissance and Footprinting | Completed |
-| 🌐 Network Discovery               | Completed |
-| 👨🏽‍💻 Host Identification             | Completed |
-| ⏳ Network Topology                | Completed |
-| 💥 Exploitation                    | Completed |
+| 🔎 Reconnaissance and Footprinting | ✔️ Completed     |
+| 🌐 Network Discovery               | ✔️ Completed     |
+| 👨🏽‍💻 Host Identification             | ✔️ Completed     |
+| ⏳ Network Topology                | ✔️ Completed     |
+| 💥 Exploitation                    | ⏳ Not Performed |
 
 ---
 
-# 7. Conclusion
+# 🔚 10. Conclusion
 
-During Week 2 of my Cybersecurity & Ethical Hacking internship, I completed practical activities covering footprinting, reconnaissance and network scanning.
+During Week 2 of my Cybersecurity & Ethical Hacking internship, I completed authorized educational labs covering footprinting, reconnaissance, and network scanning.
 
-In the footprinting activity, I used six Kali Linux tools to collect information about the target domain. I learned how WHOIS can provide domain information, WhatWeb can identify web technologies, Nslookup can resolve domain names, Curl can inspect HTTP headers, Wafw00f can identify a WAF, and DNSRecon can provide additional DNS information.
+Using Kali Linux tools (such as ```WHOIS, whatweb, nslookup, wafwoof, dnsrecon, ```) and Zenmap, I gathered targeted domain information, analyzed network configurations, mapped topologies, and collected IP/MAC addresses.
 
-In the network scanning activity, I used Zenmap to identify my local network configuration and discover active hosts. I also collected IP and MAC address information and created a network topology.
-
-The exercises showed me that information gathering is an important part of cybersecurity. Even before attempting to exploit a system, a security professional can learn a significant amount about an environment by carefully analyzing publicly available information and network responses.
-
-I also learned that technical findings should be documented clearly. A good cybersecurity report should explain what was performed, what was discovered, what the observation means, what risk it may create, and what can be done to reduce that risk.
-
-Finally, I learned that reconnaissance and scanning must always be performed within an authorized scope. These activities were completed as part of the assigned educational cybersecurity lab.
+This experience emphasized that robust reconnaissance is critical for identifying vulnerabilities early, while professional reporting ensures those risks are clearly explained and effectively mitigated.
 
 ---
 
