@@ -70,7 +70,7 @@ To ensure reproducibility and rigorous documentation, every technical step outli
 
 Each tool used and its purpose can be found in the table below.
 
-| Tool | Purpose |
+| Tool/commands | Purpose |
 |---|---|
 | Kali Linux           | Operating system deployed to conduct initial reconnaissance and information gathering.          |
 | Windows OS           | Host Operating systems utilized for networking activities including network mapping via Zenmap. |
@@ -89,7 +89,7 @@ Each tool used and its purpose can be found in the table below.
 
 ## 💡4.1 Footprinting & Reconnaissance
 
-I performed reconnaissance against the `networkwalks.com` domain using six Kali Linux tools: 
+I performed reconnaissance against the `networkwalks.com` domain using six Kali Linux commands: 
 
 ```text
 WHOIS
