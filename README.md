@@ -121,6 +121,8 @@ WHOIS was used to obtain publicly available domain registration information and 
 
 > ⚠️ **Note: Here the name servers point to HostGator, so an attacker instantly learns the hosting provider. Registration dates, and abuse contacts help with social engineering and planning.**
 
+### 4.2.2 
+
 
 
 
