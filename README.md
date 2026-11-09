@@ -83,7 +83,23 @@ Each tool used and its purpose can be found in the table below.
 | Zenmap (Nmap GUI)    | Scan the local subnet to find live hosts, active IP addresses, and MAC addresses.               |
 | Windows CMD          | Local IP and MAC address identification via a command line interface.                           |
 
+---
 
+# 🛡️ 4.1 Activities Performed
+
+## 💡4.1 Footprinting & Reconnaissance
+
+I performed reconnaissance against the `networkwalks.com` domain using six Kali Linux tools: 
+
+```text
+WHOIS
+WhatWeb
+Nslookup
+Curl 
+Wafw00f 
+DNSRecon
+```
+> ⚠️ **Note: Each tool was used to collect a different type of information about the target as seen in the table above**
 
 
 
